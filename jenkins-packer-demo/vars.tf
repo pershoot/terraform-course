@@ -1,5 +1,5 @@
 variable "AWS_REGION" {
-  default = "eu-west-1"
+  default = "us-east-1"
 }
 
 variable "PATH_TO_PRIVATE_KEY" {
@@ -13,9 +13,9 @@ variable "PATH_TO_PUBLIC_KEY" {
 variable "AMIS" {
   type = map(string)
   default = {
-    us-east-1 = "ami-13be557e"
-    us-west-2 = "ami-06b94666"
-    eu-west-1 = "ami-844e0bf7"
+    us-east-1 = "ami-095192256fe1477ad"
+    us-west-2 = "ami-04aac3d7ea7609469"
+    eu-west-1 = "ami-08b1cea5487c762b3"
   }
 }
 
@@ -24,11 +24,11 @@ variable "INSTANCE_DEVICE_NAME" {
 }
 
 variable "JENKINS_VERSION" {
-  default = "2.121.2"
+  default = "2.176.1"
 }
 
 variable "TERRAFORM_VERSION" {
-  default = "0.11.7"
+  default = "0.12.2"
 }
 
 variable "APP_INSTANCE_COUNT" {
